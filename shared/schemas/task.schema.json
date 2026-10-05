@@ -1,0 +1,4 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://shao.local/schemas/task.schema.json","title":"Task proposal","type":"object","additionalProperties":false,
+  "required":["title","objective","criterionIds"],"properties":{"title":{"type":"string","minLength":1,"maxLength":160},"objective":{"type":"string","minLength":1,"maxLength":4000},"criterionIds":{"type":"array","items":{"type":"string"},"uniqueItems":true},"assigneeId":{"type":"string"},"reviewerId":{"type":"string"},"parentTaskId":{"type":"string"},"contextRefs":{"type":"array","items":{"type":"string"},"uniqueItems":true}}
+}

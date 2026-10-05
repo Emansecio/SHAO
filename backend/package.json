@@ -1,0 +1,16 @@
+{
+  "name": "shao-backend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": { "node": ">=26.0.0" },
+  "scripts": {
+    "start": "node --experimental-strip-types src/server.ts",
+    "test": "node --experimental-strip-types --test test/*.test.mjs src/runtime/*.test.mjs src/mcp/*.test.mjs",
+    "check": "node --check src/store.js && node --check src/core.js && node --check src/broker.js && tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.4",
+    "typescript": "7.0.2"
+  }
+}

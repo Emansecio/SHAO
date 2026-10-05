@@ -1,0 +1,4 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://shao.local/schemas/cli-final.schema.json","title":"Normalized CLI adapter outcome","type":"object","additionalProperties":false,
+  "required":["status"],"properties":{"status":{"enum":["completed","cancelled","failed","outcome_uncertain"]},"text":{"type":"string"},"sessionId":{"type":"string"},"error":{"type":"object","additionalProperties":false,"required":["code","message","retryable"],"properties":{"code":{"type":"string"},"message":{"type":"string"},"retryable":{"type":"boolean"}}},"usage":{"type":"object","additionalProperties":false,"properties":{"inputTokens":{"type":"integer","minimum":0},"outputTokens":{"type":"integer","minimum":0}}}}
+}

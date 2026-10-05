@@ -1,0 +1,5 @@
+external_id,name,email
+A-100,Ana Exemplo,ana@example.invalid
+A-101,Beto Exemplo,beto@example.invalid
+A-102,Cris Exemplo,not-an-email
+A-103,Dani Exemplo,dani@example.invalid

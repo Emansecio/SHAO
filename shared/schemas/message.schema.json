@@ -1,0 +1,4 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://shao.local/schemas/message.schema.json","title":"Public message","type":"object","additionalProperties":false,
+  "required":["body","clientMessageId"],"properties":{"body":{"type":"string","minLength":1,"maxLength":20000},"format":{"enum":["text","markdown"]},"inReplyTo":{"type":"string"},"clientMessageId":{"type":"string","minLength":8,"maxLength":128},"contextRefs":{"type":"array","items":{"type":"string"},"uniqueItems":true}}
+}

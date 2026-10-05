@@ -1,0 +1,4 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://shao.local/schemas/evidence.schema.json","title":"Evidence input","type":"object","additionalProperties":false,
+  "required":["kind","label"],"properties":{"kind":{"enum":["file","note","command_result","artifact"]},"label":{"type":"string","minLength":1,"maxLength":240},"uri":{"type":"string","maxLength":2048},"excerpt":{"type":"string","maxLength":12000},"relatedTaskId":{"type":"string"},"claims":{"type":"array","items":{"type":"string","maxLength":1000},"maxItems":30}}
+}

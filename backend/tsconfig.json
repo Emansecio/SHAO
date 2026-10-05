@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "allowJs": true,
+    "checkJs": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "strict": false,
+    "types": ["node"],
+    "skipLibCheck": true
+  },
+  "include": ["../shared/contracts.ts", "src/server.ts", "src/core.js", "src/broker.js", "src/store.js", "src/runtime/**/*.ts", "src/mcp/stdio.ts"]
+}

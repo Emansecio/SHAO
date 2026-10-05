@@ -1,0 +1,13 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://shao.local/schemas/event-envelope.schema.json",
+  "title":"SHAO event envelope",
+  "type":"object","additionalProperties":false,
+  "required":["id","seq","runId","type","ts","actorId","turnId","messageId","recipients","taskId","causation","payload"],
+  "properties":{
+    "id":{"type":"string","minLength":1},"seq":{"type":"integer","minimum":1},"runId":{"type":"string","minLength":1},
+    "type":{"type":"string","minLength":1},"ts":{"type":"string","format":"date-time"},"actorId":{"type":"string","minLength":1},
+    "turnId":{"type":["string","null"]},"messageId":{"type":["string","null"]},"recipients":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "taskId":{"type":["string","null"]},"causation":{"type":["string","null"]},"payload":true
+  }
+}
